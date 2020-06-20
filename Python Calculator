@@ -1,0 +1,8 @@
+a = input("Input a number")    
+b = input ("Input a second number")
+a=int(a)
+b=int(b)
+print ("If you add the two numbers your result is:" + str(a+b))
+print ("If you subtract the two numbers your result is:" + str(a-b))
+print ("If you multiply the two numbers your result is:" + str(a*b))
+print ("If you divide the two numbers your result is:" + str(a/b))
