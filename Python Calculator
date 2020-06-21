@@ -17,38 +17,38 @@ def main():
         operation = input("What operation do you want? ")
 
 def addition():
-    a =input("Enter the first operand")
-    b =input("Enter the second operand")
+    a =input("Enter the first operand ")
+    b =input("Enter the second operand ")
     c= int(a) + int(b)
     print("Result:" + str(c))
 
 def subtraction():
-    a =input("Enter the first operand")
-    b =input("Enter the second operand")
+    a =input("Enter the first operand ")
+    b =input("Enter the second operand ")
     c= int(a) - int(b)
     print("Result:" + str(c))
 
 def multiplication():
-    a =input("Enter the first operand")
-    b =input("Enter the second operand")
+    a =input("Enter the first operand ")
+    b =input("Enter the second operand ")
     c= int(a) * int(b)
     print("Result:" + str(c))
 
 def division():
-    a =input("Enter the first operand")
-    b =input("Enter the second operand")
+    a =input("Enter the first operand ")
+    b =input("Enter the second operand ")
     c= int(a) / int(b)
     print("Result:" + str(c))
     
 def exponent():
-    a=input ("Enter the first operand")
-    b=input("Enter the second operand")
+    a=input ("Enter the first operand ")
+    b=input("Enter the second operand ")
     c= int(a) ** int(b)
     print("Result:" + str(c))
 
 def modulus():
-    a=input ("Enter the first operand")
-    b=input("Enter the second operand")
+    a=input ("Enter the first operand ")
+    b=input("Enter the second operand ")
     c= int(a) % int(b)
     print("Result:" + str(c))
 
