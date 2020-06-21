@@ -55,7 +55,7 @@ def modulus():
     print("Result: " + str(c))
     
 def custom():
-   equation= input("Input and equation that only has digits and an operater\n")
+   equation= input("Input and equation that only has digits, an operater and is only 3 units long\n")
    if equation[-3].isdigit() and equation[-1].isdigit():
     if  equation[-2]== "+": 
         answer=int(equation[-1]) + int(equation[-3])
