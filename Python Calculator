@@ -1,12 +1,56 @@
-a = input("Input a number: ")    
-b = input ("Input a second number: ")
-a=int(a)
-b=int(b)
-print ("If you add the two numbers your result is: " + str(a+b))
-print ("If have subtract "+ str(a) + " from "+ str(b) + " your result is: "+ str(b-a))
-print ("If have subtract "+ str(b) + " from "+ str(a) + " your result is: "+ str(a-b))
-print ("If you multiply the two numbers your result is: " + str(a*b))
-print ("If you divide the two numbers your result is: " + str(a/b))
-print ("If have "+ str(a) + " to the power of "+ str(b) + " your result is: " + str(a**b))
-print ("If have "+ str(b) + " to the power of "+ str(a) + " your result is: " + str(b**a))
+def main():
+    operation = input("What operation do you want? ")
+    while (operation  != "q") :
+        if operation ==("addition"):
+            addition()      
+        elif operation == ("subtraction"):
+            subtraction()
+        elif operation ==("multiplication"):
+            multiplication()
+        elif operation == ("divison"):
+            division()
+        elif operation == ("exponent"):
+            exponent()
+        elif operation == ("modulus"):
+            modulus()
+        
+        operation = input("What operation do you want? ")
 
+def addition():
+    a =input("Enter the first operand")
+    b =input("Enter the second operand")
+    c= int(a) + int(b)
+    print("Result:" + str(c))
+
+def subtraction():
+    a =input("Enter the first operand")
+    b =input("Enter the second operand")
+    c= int(a) - int(b)
+    print("Result:" + str(c))
+
+def multiplication():
+    a =input("Enter the first operand")
+    b =input("Enter the second operand")
+    c= int(a) * int(b)
+    print("Result:" + str(c))
+
+def division():
+    a =input("Enter the first operand")
+    b =input("Enter the second operand")
+    c= int(a) / int(b)
+    print("Result:" + str(c))
+    
+def exponent():
+    a=input ("Enter the first operand")
+    b=input("Enter the second operand")
+    c= int(a) ** int(b)
+    print("Result:" + str(c))
+
+def modulus():
+    a=input ("Enter the first operand")
+    b=input("Enter the second operand")
+    c= int(a) % int(b)
+    print("Result:" + str(c))
+
+if __name__== "__main__" :
+    main()
