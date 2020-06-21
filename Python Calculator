@@ -1,5 +1,5 @@
 def main():
-    operation = input("What operation do you want?(Addition, Multiplication, Subtraction, Division, Exponent, Modulus)\n " )
+    operation = input("What operation do you want?(Addition, Multiplication, Subtraction, Division, Exponent, Modulus, or Custom)\n " )
     while (operation  != "quit") :
         if operation ==("addition") or operation == ("Addition"):
             addition()      
@@ -13,6 +13,8 @@ def main():
             exponent()
         elif operation == ("modulus") or operation == ("Modulus"):
             modulus()
+        elif operation == ("Custom") or operation == ("custom"):
+            custom()
         
         operation = input("What operation do you want?\n")
 
@@ -51,6 +53,27 @@ def modulus():
     b=input("Enter the second operand\n")
     c= int(a) % int(b)
     print("Result: " + str(c))
-
+    
+def custom():
+   equation= input("Input and equation that only has digits and an operater\n")
+   if equation[-3].isdigit() and equation[-1].isdigit():
+    if  equation[-2]== "+": 
+        answer=int(equation[-1]) + int(equation[-3])
+        print(answer)
+    elif equation[-2]== "-":  
+        answer=int(equation[-1])-int(equation[-3])
+        print(answer)
+    elif equation[-2]== "*":  
+        answer=int(equation[-1])*int(equation[-3])
+        print(answer)
+    elif equation[-2]== "/":  
+        answer=int(equation[-1])/int(equation[-3])
+        print(answer)
+    elif equation[-2]== "^":  
+        answer=int(equation[-1])**int(equation[-3])
+        print(answer)
+    elif equation[-2]== "%":  
+        answer=int(equation[-1])%int(equation[-3])
+        print(answer)
 if __name__== "__main__" :
     main()
