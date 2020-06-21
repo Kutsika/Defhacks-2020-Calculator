@@ -1,13 +1,13 @@
 def main():
     operation = input("What operation do you want? ")
-    while (operation  != "q") :
+    while (operation  != "quit") :
         if operation ==("addition"):
             addition()      
         elif operation == ("subtraction"):
             subtraction()
         elif operation ==("multiplication"):
             multiplication()
-        elif operation == ("divison"):
+        elif operation == ("division"):
             division()
         elif operation == ("exponent"):
             exponent()
@@ -20,37 +20,37 @@ def addition():
     a =input("Enter the first operand ")
     b =input("Enter the second operand ")
     c= int(a) + int(b)
-    print("Result:" + str(c))
+    print("Result: " + str(c))
 
 def subtraction():
     a =input("Enter the first operand ")
     b =input("Enter the second operand ")
     c= int(a) - int(b)
-    print("Result:" + str(c))
+    print("Result: " + str(c))
 
 def multiplication():
     a =input("Enter the first operand ")
     b =input("Enter the second operand ")
     c= int(a) * int(b)
-    print("Result:" + str(c))
+    print("Result: " + str(c))
 
 def division():
     a =input("Enter the first operand ")
     b =input("Enter the second operand ")
     c= int(a) / int(b)
-    print("Result:" + str(c))
+    print("Result: " + str(c))
     
 def exponent():
     a=input ("Enter the first operand ")
     b=input("Enter the second operand ")
     c= int(a) ** int(b)
-    print("Result:" + str(c))
+    print("Result: " + str(c))
 
 def modulus():
     a=input ("Enter the first operand ")
     b=input("Enter the second operand ")
     c= int(a) % int(b)
-    print("Result:" + str(c))
+    print("Result: " + str(c))
 
 if __name__== "__main__" :
     main()
