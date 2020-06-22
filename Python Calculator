@@ -55,25 +55,22 @@ def modulus():
     print("Result: " + str(c))
     
 def custom():
-   equation= input("Input and equation that only has digits, an operater and is only 3 units long\n")
-   if equation[-3].isdigit() and equation[-1].isdigit():
-    if  equation[-2]== "+": 
-        answer=int(equation[-1]) + int(equation[-3])
-        print(answer)
-    elif equation[-2]== "-":  
-        answer=int(equation[-1])-int(equation[-3])
-        print(answer)
-    elif equation[-2]== "*":  
-        answer=int(equation[-1])*int(equation[-3])
-        print(answer)
-    elif equation[-2]== "/":  
-        answer=int(equation[-1])/int(equation[-3])
-        print(answer)
-    elif equation[-2]== "^":  
-        answer=int(equation[-1])**int(equation[-3])
-        print(answer)
-    elif equation[-2]== "%":  
-        answer=int(equation[-1])%int(equation[-3])
-        print(answer)
+   equation= input("Input an equation that only has digits and operaters \n")
+   answer=0
+   answer=answer+int(equation[0])
+   for n in range (0,len(equation),2):
+    if equation[n+1]== "+": 
+        answer=answer+int(equation[n+2])    
+    elif equation[n+1]== "-":  
+        answer=answer-int(equation[n+2])      
+    elif equation[n+1]== "*":  
+        answer=answer*int(equation[n+2])      
+    elif equation[n+1]== "/":  
+        answer=answer/int(equation[n+2])      
+    elif equation[n+1]== "^":  
+        answer=answer**int(equation[n+2])      
+    elif equation[n+1]== "%":  
+        answer=answer%int(equation[n+2])
+    print("The answer is: "+ str(answer))
 if __name__== "__main__" :
     main()
